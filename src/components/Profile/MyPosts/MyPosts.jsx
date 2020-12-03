@@ -2,13 +2,15 @@ import React from 'react';
 import Post from './Post/Post';
 import s from './my_Posts.module.css';
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+	
     return (
+    
       <div clasName={s.item}> 
-  <Post />
-  <Post />
-  <Post />
-  <Post />
+    {props.mes}
+  <Post messag="Hi how are you" like="25"/>
+  <Post messag="it s goot" like="15"/>
+  
   </div>
     )
 }
