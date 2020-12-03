@@ -10,7 +10,7 @@ const Post = (props) => {
         <div className={s.ava}>
           <img src='https://mobimg.b-cdn.net/pic/v2/gallery/preview/avatar_avatar-fon-kino-17856.jpg' />
           {props.messag}
-          <span>{props.like}</span>
+          <span>Like{props.like}</span>
         </div>
       
     </div>
