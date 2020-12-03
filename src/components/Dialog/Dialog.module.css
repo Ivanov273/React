@@ -1,0 +1,17 @@
+.main_container{
+	margin-top: 10px;
+}
+.header{
+	margin: 10px;
+	font-size: 20px;
+}
+.dialog_container{
+	display: grid;
+
+	grid-template-columns: 29% 70% ;
+	margin-left: 10px;
+}
+.left{
+	grid-template-columns: auto;
+	border-right: 1px solid green;
+}
