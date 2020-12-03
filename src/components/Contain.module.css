@@ -1,0 +1,17 @@
+
+.contain{
+  background-color: yellow;
+  grid-area: contain;
+}
+.contain img{
+  margin: 0 auto;
+  position: relative;
+  display: block;
+}
+.active{
+	color: red;
+}
+.img{
+	height: 69vh;
+	widows: 30%;
+}
