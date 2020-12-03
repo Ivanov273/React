@@ -6,6 +6,7 @@ import s from './Profile.module.css';
 const Profile = () => {
     return  (
     <div className={s.content}>
+    
     <div>
       <img className={s.image} src={img} />
     </div>
