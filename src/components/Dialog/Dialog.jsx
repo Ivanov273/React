@@ -1,8 +1,20 @@
 import React from 'react';
-import Name from './Name/Name';
-
+import {NavLink} from "react-router-dom"
 import s from './Dialog.module.css';
-
+const DialogItem = (props)=>{
+    return(
+        <div>
+ <NavLink to={"/Dialog/"+props.id}>{props.name}</NavLink>
+ </div>
+        )
+}
+const Message = (props) =>{
+    return(
+        <div>
+<h1>{props.title}</h1>
+        </div>
+        )
+}
 const Dialog = (props) => {
     return  (
     <div className={s.main_container}>
@@ -13,24 +25,14 @@ const Dialog = (props) => {
 
     <div className={s.dialog_container}>
     <div className={s.left}> 
-    <ul>
-    <li><Name name="Mike" /></li>
-    <li><Name name="Andrey" /></li>
-    <li><Name name="Semen" /></li>
-    <li><Name name="Kostya" /></li>
-    <li><Name name="Fedya" /></li>
-    <li><Name name="Alex" /></li>
-    <li><Name name="Liza" /></li>
-    <li><Name name="Katya" /></li>
-    <li><Name name="Fr" /></li>
-    <li><Name name="Sonya" /></li>
-   
-   
-    
-    </ul>
+ <DialogItem name="Mike" id="0" />
+ <DialogItem  to="/Dialog/1" name="Sveta" id="1" />
+ <DialogItem to="/Dialog/2" name="Alex" id="2" />
+ <DialogItem to="/Dialog/3" name="Sem" id="3" />
+ 
   </div>
-    <div>
-      Sectioan12
+    <div className='messages'>
+      <Message title="cacacascascasc" />
     </div>
     </div>
     

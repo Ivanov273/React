@@ -8,7 +8,7 @@
 .dialog_container{
 	display: grid;
 
-	grid-template-columns: 29% 70% ;
+	grid-template-columns: 2fr 10fr ;
 	margin-left: 10px;
 }
 .left{
