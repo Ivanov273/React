@@ -1,0 +1,14 @@
+.img_container{
+	display: grid;
+	
+}
+.image {
+	height: 70vh;
+	margin: auto;
+	
+}
+.description{
+	text-align: center;
+	padding-top: 5px;
+	color: #fff;
+}

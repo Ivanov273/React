@@ -18,7 +18,7 @@ const App = () => {
       <Header />
       <Navbar />
       <div className="app-wrapper-content">
-      <Route path="/Profile" component={Profile} />
+      <Route path="/profile" component={Profile} />
       <Route  path="/Dialog" component={Dialog} />
       <Route path="/News" component={News} />
       <Route path="/Music" component={Music} />
@@ -26,7 +26,7 @@ const App = () => {
     
       
       
-      {/*<Profile />*/}
+      
       </div>
     </div>;
   </BrowserRouter>

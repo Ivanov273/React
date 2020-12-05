@@ -1,6 +1,9 @@
 .header {
     grid-area: h;
+    display: grid;
+    grid-template-columns: 1fr 20fr;
     background-color: #50b765;
+    padding-top: 10px
 }
 
 .header img {
@@ -8,3 +11,7 @@
     padding-top: 10px;
 }
 
+.menu{
+	margin: auto;
+	display: flex;
+}

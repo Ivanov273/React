@@ -1,21 +1,43 @@
 import React from 'react';
 import {NavLink} from "react-router-dom"
 import s from './Dialog.module.css';
-const DialogItem = (props)=>{
-    return(
-        <div>
- <NavLink to={"/Dialog/"+props.id}>{props.name}</NavLink>
- </div>
-        )
+
+const Dialods=(props)=>{
+  return(
+  <div>
+  <NavLink to={"/Dialog/"+props.id}  >{props.name}</NavLink>
+  </div>
+  )
 }
-const Message = (props) =>{
+  const Messages=(props)=>{
     return(
-        <div>
-<h1>{props.title}</h1>
-        </div>
-        )
-}
+    <div>
+    <h3>{props.message}</h3>
+    </div>
+    )
+  }
+
 const Dialog = (props) => {
+let MasDialogs =[
+{id:1,name:'Mike'},
+{id:2,name:'Viktor'},
+{id:3,name:'Mitya'},
+{id:4,name:'Ylia'},
+{id:5,name:'Sveta'},
+]
+let MasMessage=[
+{id:1,message:'Hi it is coooooool!!!!'},
+{id:2,message:'Hi Very'},
+{id:3,message:'Hi Verrry'},
+{id:4,message:'Hi VBeryyyyyy'},
+{id:5,message:'Hi cocococoocococ'},
+]
+let NewMasDialogs = MasDialogs.map((d)=>
+  <Dialods id={d.id} name={d.name} />
+);
+let NewMessages = MasMessage.map((m)=>
+<Messages message={m.message} />
+)
     return  (
     <div className={s.main_container}>
     
@@ -25,14 +47,12 @@ const Dialog = (props) => {
 
     <div className={s.dialog_container}>
     <div className={s.left}> 
- <DialogItem name="Mike" id="0" />
- <DialogItem  to="/Dialog/1" name="Sveta" id="1" />
- <DialogItem to="/Dialog/2" name="Alex" id="2" />
- <DialogItem to="/Dialog/3" name="Sem" id="3" />
+{NewMasDialogs}
+   
  
   </div>
     <div className='messages'>
-      <Message title="cacacascascasc" />
+     {NewMessages}
     </div>
     </div>
     

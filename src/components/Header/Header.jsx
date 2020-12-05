@@ -4,10 +4,22 @@ import logo from './logo.png'
 const Header = () => {
   return (
   	<div className={s.header}>
-  	<img src={logo} />
-    <a href='#'>Home</a> - 
-    <a href='#'>News Feed</a> - 
-    <a href='#'>Messages</a> - 
+  		<img src={logo} />
+  		<div className={s.menu}>
+  			<div>
+  				<a href='#'>Home</a>	
+  			</div>
+  			 <div>
+  				<a href='#'>Music</a>	
+  			</div>
+  			 <div>
+  				<a href='#'>Message</a>	
+  			</div>
+  			<div>
+  				<a href='#'>Profile</a>	
+  			</div>
+    		 
+  		</div>
   </div>
   );
 }
