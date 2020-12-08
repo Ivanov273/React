@@ -13,3 +13,12 @@
 .item a.active  {
     color: gold;
 }
+.frends_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.frends_wrapper img{
+    width: 60px;
+    height: 60px;
+    border-radius: 40px;
+}

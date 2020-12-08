@@ -15,3 +15,17 @@
 	grid-template-columns: auto;
 	border-right: 1px solid green;
 }
+.DialogItemWrapper{
+	display: grid;
+	margin: 10px 20px;
+	grid-template-columns: 1fr 2fr;
+}
+.DialogItemWrapper img{
+	width: 52px;
+	height: 55px;
+	border-radius: 30px;
+}
+.DialogItemWrapper a{
+	margin: 15px 10px 0px 10px;
+	text-decoration: none;
+}

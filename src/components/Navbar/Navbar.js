@@ -1,26 +1,26 @@
 import React from 'react';
 import s from './Navbar.module.css';
 import {NavLink} from "react-router-dom"
+import Nav from './Nav/Nav'
+import Friends from './Friends/Friends'
+const Navbar = (props) => {
 
+    let NewMassNav = props.state.FirstNav.map((n)=><Nav to={'/'+n.to} item={n.item}  />)
+    let NewMassFriends = props.state.Friends.map((f)=><Friends  name={f.name}  />)
+    return (
 
-const Navbar = () => {
-    return <nav className={s.nav}>
-        <div className={s.item}>
-            <NavLink to="/profile" activeClassName={s.active}>Profile</NavLink>
-        </div>
-        <div className={`${s.item} ${s.active}`}>
-            <NavLink  to="/dialog" activeClassName={s.active}>Messages</NavLink>
-        </div>
-        <div className={s.item}>
-            <NavLink to="/news" activeClassName={s.active}>News</NavLink>
-        </div>
-        <div className={s.item}>
-            <NavLink to="/Music" activeClassName={s.active}>Music</NavLink>
-        </div>
-        <div className={s.item}>
-            <NavLink to="/Settings" activeClassName={s.active}>Settings</NavLink>
+    <nav className={s.nav}>
+        {NewMassNav}
+        <h1>Friends</h1>
+        <div className={s.frends_wrapper}>
+        {NewMassFriends}
         </div>
     </nav>
+
+
+
+
+)
 }
 
 export default Navbar;

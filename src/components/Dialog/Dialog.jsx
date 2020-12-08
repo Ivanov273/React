@@ -1,17 +1,18 @@
 import React from 'react';
-import {NavLink} from "react-router-dom";
+import {NavLink, Route} from "react-router-dom";
 import DialogItem from './DialogItem/DialogItem'
 import Messages from './Messages/Messages'
 import s from './Dialog.module.css';
+import Profile from "../Profile/Profile";
 
 
 
 const Dialog = (props) => {
 
-let NewMasDialogs = props.masdialogs.map((d)=>
+let NewMasDialogs = props.state.masdialogs.map((d)=>
   <DialogItem id={d.id} name={d.name} />
 );
-let NewMessages = props.masmessage.map((m)=>
+let NewMessages = props.state.masmessage.map((m)=>
 <Messages message={m.message} />
 )
     return  (
@@ -22,12 +23,15 @@ let NewMessages = props.masmessage.map((m)=>
     </div>
 
     <div className={s.dialog_container}>
-    <div className={s.left}> 
+    <div className={s.left}>
+
 {NewMasDialogs}
+
 
  
   </div>
     <div className='messages'>
+       
      {NewMessages}
     </div>
     </div>
