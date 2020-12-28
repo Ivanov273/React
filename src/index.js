@@ -22,7 +22,7 @@ store.subscribe(()=>{
     rebootS(state)
 })
 
-// If you want your app to work offlinгггe and load faster, you can changeчтото обновили
+
 // unregister() to register() below. Note this comes with some pitfalls.2222222222222scscsdc222222222
 // Learn more about service workers: http://bit.ly/CRA-PWApi;i'i9999989797888    88
 serviceWorker.unregister();
