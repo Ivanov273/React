@@ -6,6 +6,7 @@ import {addMessageActionCreator, changeMessageActionCreator} from "../../Redux/M
 
 const Dialog = (props) => {
 let localState = props.store.getState().Message;
+
     let NewMasDialogs = localState.masdialogs.map((d) =>
         <DialogItem id={d.id} name={d.name}/>
     );
@@ -13,7 +14,7 @@ let localState = props.store.getState().Message;
         <Messages message={m.message} dispatch={props.store.dispatch} newmessage={localState.newmessage}/>
     )
 
-    let newRefMessage = React.createRef()
+
     let addMessage = () => {
         props.store.dispatch(addMessageActionCreator())
     }

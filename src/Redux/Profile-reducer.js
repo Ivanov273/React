@@ -1,7 +1,17 @@
 const ADD_POST = 'ADD-POST';
 const CHANGE_POST = 'CHANGE-POST';
+let initialState= {
+    mypostdata: [
+        {id: 0, message: "Hi how are you", likes: 11},
+        {id: 1, message: "Hi how are you", likes: 25},
+        {id: 2, message: "it s goot", likes: 23},
+        {id: 2, message: "it  a map", likes: 55555553}
+    ],
+    newPostdata: 'It'
 
- const profileReducer=(state,action)=>{
+
+}
+ const profileReducer=(state = initialState,action)=>{
      switch (action.type){
          case ADD_POST:
              let lastPost = {
