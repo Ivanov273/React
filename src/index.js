@@ -23,6 +23,6 @@ store.subscribe(()=>{
 })
 
 // If you want your app to work offlinгггe amhmhmnd load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
+// unregister() to register() below. 3333333333333333333333333333333333333333
 // Learn more about service workers: http://bit.ly/CRA-PWApi;i'i999998979788888
 serviceWorker.unregister();
